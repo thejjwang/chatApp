@@ -9,6 +9,8 @@ const app = express();
 
 const PORT = process.env.PORT;
 
+app.use(express.json())
+
 app.use("/api/auth", authRoutes);
 
 // Start the server only after the database connection is established
